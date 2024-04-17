@@ -1,0 +1,259 @@
+body {
+  background-color: rgb(75, 176, 209);
+}
+  
+  .h1 {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: -8px;
+      padding: 5px;
+      background-color: #00101b;
+    }
+    
+    .logo {
+      width: 150px; 
+      margin: 11px;
+      padding: 5px;
+    
+    }
+    
+    .text-side {
+      flex-grow: 1;
+      padding-left: 20px; 
+      font-size: 55px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+          flex-direction: column; 
+          align-items: center; 
+          padding: 10px; 
+      }
+  
+      .logo {
+          width: 100px; 
+          margin: 11px;
+          padding: 5px;
+      }
+  
+      .text-side {
+          font-size: 30px; 
+          text-align: center; 
+      }
+  }
+  
+
+    
+     /*menu*/
+  
+     .menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px;
+      background-color: #00101b;
+      border-radius: 10px;
+    }
+    
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  
+    .menu a, .dropdown {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .dropdown .dropbtn {
+        background: none; 
+        border: none; 
+        color: #ffffff; 
+        font: inherit; 
+        cursor: pointer; 
+        font-size: 20px; 
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background: #00101b;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+
+    @media (max-width: 768px) {
+      .menu {
+          display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          padding: 10px; 
+          background-color: #00101b;
+          border-radius: 10px;
+      }
+    
+      .menu a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 20px;
+          margin-bottom: 10px; 
+      }
+    
+      .dropdown {
+          position: relative; 
+      }
+    
+      .dropdown .dropbtn {
+          background: none;
+          border: none;
+          color: #ffffff;
+          font: inherit;
+          cursor: pointer;
+          font-size: 20px;
+          padding: 10px; 
+      }
+    
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 100%; 
+          left: 0; 
+          min-width: 160px;
+          z-index: 1;
+          background: #00101b;
+          border-radius: 10px;
+      }
+    
+      .dropdown-content a {
+          display: block;
+          padding: 12px 16px;
+          text-decoration: none;
+          color: #ffffff; 
+      }
+    
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+    }
+
+
+
+    .espacio1 {
+      height: 15px;
+  }
+  
+  .espacio2 {
+      height: 5px;
+  }
+  
+  .espacio3 {
+      height: 70px;
+  }
+
+
+
+  /*FACEBOOK*/
+
+.social-media {
+  text-align: center;
+  background-color: #00101b;
+  border-radius: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media p {
+  font-size: 17px; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: #ffffff;
+}
+
+
+
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 20px; 
+  
+}
+
+.noticias25 {
+  background-color: #00101b;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.noticias25 img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+ 
+}
+
+.noticias25 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+
+}
+
+.noticias25 p {
+  font-size: 18px;
+  
+}
+
+a:-webkit-any-link {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .noticias {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+  }
+
+  .noticias25 {
+    padding: 10px; /* Reduce el padding para dispositivos móviles */
+  }
+
+  .noticias25 p {
+    font-size: 20px;
+    
+  }
+  
+}
+
+h3 {
+  font-size: 14px;
+}
+
+
+
+

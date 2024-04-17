@@ -1,0 +1,305 @@
+body {
+  background-color: rgb(75, 176, 209);
+}
+  
+  .h1 {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: -8px;
+      padding: 5px;
+      background-color: #00101b;
+    }
+    
+    .logo {
+      width: 150px; 
+      margin: 11px;
+      padding: 5px;
+    
+    }
+    
+    .text-side {
+      flex-grow: 1;
+      padding-left: 20px; 
+      font-size: 55px;
+      color: #ffffff;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+          flex-direction: column; 
+          align-items: center; 
+          padding: 10px; 
+      }
+  
+      .logo {
+          width: 100px; 
+          margin: 11px;
+          padding: 5px;
+      }
+  
+      .text-side {
+          font-size: 30px; 
+          text-align: center; 
+      }
+  }
+  
+
+     /*menu*/
+  
+     .menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px;
+      background-color: #00101b;
+      border-radius: 10px;
+    }
+    
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  
+    .menu a, .dropdown {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .dropdown .dropbtn {
+        background: none; 
+        border: none; 
+        color: #ffffff; 
+        font: inherit; 
+        cursor: pointer; 
+        font-size: 20px; 
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background: #00101b;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .menu {
+          display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          padding: 10px; 
+          background-color: #00101b;
+          border-radius: 10px;
+      }
+    
+      .menu a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 20px;
+          margin-bottom: 10px; 
+      }
+    
+      .dropdown {
+          position: relative; 
+      }
+    
+      .dropdown .dropbtn {
+          background: none;
+          border: none;
+          color: #ffffff;
+          font: inherit;
+          cursor: pointer;
+          font-size: 20px;
+          padding: 10px; 
+      }
+    
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 100%; 
+          left: 0; 
+          min-width: 160px;
+          z-index: 1;
+          background: #00101b;
+          border-radius: 10px;
+      }
+    
+      .dropdown-content a {
+          display: block;
+          padding: 12px 16px;
+          text-decoration: none;
+          color: #ffffff; 
+      }
+    
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+    }
+
+
+
+
+
+
+    .espacio1 {
+      height: 15px;
+  }
+  
+  .espacio2 {
+      height: 5px;
+  }
+  
+  .espacio3 {
+      height: 70px;
+  }
+
+  /*cards*/
+
+  .presidente {
+    background-color: #00101b; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.presidente h1 {
+    margin-left: 10px;
+    color: rgb(255, 255, 255); 
+}
+
+.presidente .contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.presidente .contenido img {
+    width: 450px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.presidente .contenido p {
+    width: 50%;
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .presidente {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      background-color: #00101b;
+      border-radius: 10px;
+      padding: 0px; 
+  }
+
+  .presidente h1 {
+      color: rgb(255, 255, 255);
+      text-align: center; 
+  }
+
+  .presidente .contenido {
+      flex-direction: column; 
+      align-items: center; 
+      width: 90%; 
+  }
+
+  .presidente .contenido img {
+      width: 90%; 
+      max-width: 450px; 
+      height: auto;
+      border-radius: 10px;
+  }
+
+  .presidente .contenido p {
+      width: 80%; 
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      text-align: center; 
+  }
+}
+
+
+/*dts*/
+
+.tecnicos {
+  display: flex;
+  justify-content: space-between;
+  background: #00101b;
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(255, 255, 255); 
+}
+
+.info {
+  width: 45%; 
+}
+
+.info h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.info h3, .info p {
+  margin: 0.2em 0;
+  font-size: 20px;
+}
+
+/*comision*/
+
+.comision {
+  color: rgb(255, 255, 255); 
+  background-color: #00101b; 
+  direction: ltr; 
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+ /*FACEBOOK*/
+  
+ .social-media {
+  text-align: center;
+  background-color: #00101b;
+  border-radius: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+
+}
+
+.social-media p {
+  font-size: 17px; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: #ffffff;
+}
